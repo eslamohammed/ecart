@@ -29,6 +29,8 @@ A simple yet complete e-commerce Flutter application that displays products from
 
 ## 🚀 Getting Started
 
+### 📸 Screenshots 
+![Demo](screenshots/demo.mp4)
 ### 🔧 Prerequisites
 
 - Flutter SDK (3.x recommended)
