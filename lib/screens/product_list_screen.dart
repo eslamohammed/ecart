@@ -6,6 +6,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../bloc/product_bloc.dart';
 import '../bloc/product_state.dart';
 import '../models/product.dart';
+import '../utils/routes.dart';
 import 'product_detail_screen.dart';
 
 class ProductListScreen extends StatelessWidget {
@@ -78,12 +79,7 @@ class _ProductListItem extends StatelessWidget {
         style: DefaultTextStyle.of(context).style.copyWith(color: Colors.green),
       ),
       onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (_) => ProductDetailScreen(product: product),
-          ),
-        );
+        Navigator.pushNamed(context, Routes.detailsRoute, arguments: product);
       },
     );
   }
