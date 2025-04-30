@@ -65,7 +65,7 @@ class _SplashViewState extends State<SplashView> with TickerProviderStateMixin {
   }
 
   void _navigateToHome() {
-    Navigator.of(context).pushReplacementNamed(Routes.homeRoute);
+    Navigator.of(context).pushReplacementNamed(Routes.onBoardingRoute);
   }
 
   @override

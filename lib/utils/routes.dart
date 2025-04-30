@@ -1,3 +1,4 @@
+import 'package:ecart/screens/onboarding/OnBoardingView.dart';
 import 'package:ecart/screens/product_detail_screen.dart';
 import 'package:ecart/screens/product_list_screen.dart';
 import 'package:flutter/material.dart';
@@ -9,6 +10,8 @@ class Routes {
   static const String splashRoute = "/";
   static const String homeRoute = "/main";
   static const String detailsRoute = "/details";
+  static const String onBoardingRoute = "/onBoarding";
+
 }
 
 class RouteGenerator {
@@ -16,6 +19,8 @@ class RouteGenerator {
     switch (settings.name) {
       case Routes.splashRoute:
         return MaterialPageRoute(builder: (_) => const SplashView());
+      case Routes.onBoardingRoute:
+        return MaterialPageRoute(builder: (_) => const OnBoardingView());
       case Routes.homeRoute:
         return MaterialPageRoute(builder: (_) => const ProductListScreen());
       case Routes.detailsRoute:
